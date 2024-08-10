@@ -28,4 +28,4 @@ jobs:
 
     - name: Execute Jupyter notebook
       run: |
-        jupyter nbconvert --to notebook --execute --inplace path/to/your-notebook.ipynb
+        jupyter nbconvert --to notebook --execute --inplace ./houseRegression.ipynb
