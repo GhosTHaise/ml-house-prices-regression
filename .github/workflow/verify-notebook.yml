@@ -3,7 +3,7 @@ name: Verify Jupyter Notebook
 on:
   push:
     branches:
-      - dataset/preparation
+      - main
   pull_request:
     branches:
       - main  # Replace with your branch name
