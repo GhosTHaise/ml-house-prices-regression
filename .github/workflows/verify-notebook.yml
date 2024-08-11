@@ -19,12 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # Specify your desired Python version
+        python-version: '3.9.x'  # Specify your desired Python version
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install notebook nbconvert tensorflow tensorflow_decision_forests pandas matplotlib
+        pip install notebook nbconvert tensorflow==2.16.2 tensorflow_decision_forests==1.9.2 pandas matplotlib seaborn
 
     - name: Execute Jupyter notebook
       run: |
